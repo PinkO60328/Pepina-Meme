@@ -3,7 +3,6 @@ const valid=/^0x[a-fA-F0-9]{40}$/.test(CA);
 const buy='https://app.uniswap.org/swap'+(valid?`?outputCurrency=${CA}&chain=ethereum`:'');
 document.querySelectorAll('.ca-val').forEach(e=>e.textContent=CA);
 document.querySelectorAll('.xlink').forEach(a=>a.href=X_LINK);
-document.querySelectorAll('.tglink').forEach(a=>a.href=TELEGRAM_LINK);
 document.querySelectorAll('.social').forEach(a=>a.href=SOCIAL_LINK);
 document.querySelectorAll('.buy').forEach(a=>a.href=buy);
 document.querySelectorAll('.copy').forEach(b=>b.onclick=()=>{const done=()=>{b.textContent='copied';setTimeout(()=>b.textContent='copy',1500)};
