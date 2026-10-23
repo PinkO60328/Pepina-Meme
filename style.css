@@ -43,3 +43,8 @@ figcaption{position:absolute;left:0;right:0;bottom:0;padding:30px 16px 12px;back
 @media(max-width:900px){.links{display:none}.two{grid-template-columns:1fr}.steps{grid-template-columns:1fr 1fr}.gal{grid-template-columns:1fr 1fr}.toks{grid-template-columns:1fr 1fr}.footin{flex-direction:column;align-items:flex-start}}
 @media(max-width:560px){.steps,.gal{grid-template-columns:1fr}.btn.sm{display:none}}
 @media(prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}}
+
+.pills{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}
+.pill{display:inline-flex;align-items:center;padding:8px 14px;border-radius:999px;border:1px solid var(--line);background:#06121acc;font:500 .68rem "IBM Plex Mono",monospace;text-transform:uppercase;letter-spacing:.18em;color:var(--ice)}
+.pill.locked{border-color:#5fd4d066;background:#5fd4d014;color:var(--teal);box-shadow:0 0 18px #5fd4d022}
+.toks+.pills{margin-top:22px;margin-bottom:4px}
